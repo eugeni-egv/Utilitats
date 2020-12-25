@@ -1,0 +1,36 @@
+/* eu.CSS Decembre 2020 per Eugeni */
+body {
+	background-color:#000;
+	color:#FFF
+	}
+.eg-lateral {
+	background-color:#1E1E1E;
+	width: 58px;
+	margin-top: 40px;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	z-index: auto
+}
+.eg-top {
+	background-color:#1E1E1E;
+	position:fixed;
+	z-index:3	
+}
+.topnav-right {
+  float: right;
+  padding-right: 20px
+}
+.eu-1e {
+	background-color:#1E1E1E;
+	
+	}
+	@media (max-width: 800px) {
+  .eg-lateral {
+    display: none;
+  }
+
+.w3-container {
+	margin-left: 5px !important;
+} }
+

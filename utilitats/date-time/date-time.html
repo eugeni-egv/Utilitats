@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+  </head>
+  <body>
+    <div style="font-size: 20px; color: #ff9500; text-align: center">
+      Barcelona
+    </div>
+
+    <script type="text/javascript">
+      function startTime() {
+        today = new Date();
+        h = today.getHours();
+        m = today.getMinutes();
+        s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById("reloj").innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout("startTime()", 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+      window.onload = function () {
+        startTime();
+      };
+    </script>
+    <div
+      id="reloj"
+      style="font-size: 50px; color: #ff9500; text-align: center"
+    ></div>
+
+    <div style="font-size: 20px; color: #ff9500; text-align: center">
+      <script type="text/javascript">
+        var d = new Date();
+        var dia = new Array(7);
+        dia[0] = "Diumenge";
+        dia[1] = "Dilluns";
+        dia[2] = "Dimarts";
+        dia[3] = "Dimecres";
+        dia[4] = "Dijous";
+        dia[5] = "Divendres";
+        dia[6] = "Dissabte";
+        document.write(dia[d.getDay()]);
+
+        //<![CDATA[
+        function makeArray() {
+          for (i = 0; i < makeArray.arguments.length; i++)
+            this[i + 1] = makeArray.arguments[i];
+        }
+        var months = new makeArray(
+          "Gener",
+          "Febrer",
+          "Març",
+          "Abril",
+          "Maig",
+          "Juny",
+          "Juliol",
+          "Agost",
+          "Setembre",
+          "Octubre",
+          "Novembre",
+          "Decembre"
+        );
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var yy = date.getYear();
+        var year = yy < 1000 ? yy + 1900 : yy;
+        document.write("," + day + " de " + months[month] + " de " + year);
+        //]]>
+      </script>
+    </div>
+  </body>
+</html>

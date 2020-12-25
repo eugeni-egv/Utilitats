@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: #fff;
+    min-height: 75rem;
+  padding-top: 4.5rem
+}
+a:link {
+	color: #FF9500;
+	text-decoration: none; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #FF9500;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
